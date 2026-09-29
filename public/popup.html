@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Share</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path
+            fill="#2ca9bc"
+            d="M13,17V14a1,1,0,0,1,1-1h3a1,1,0,0,1,1,1v3a1,1,0,0,1-1,1H14A1,1,0,0,1,13,17Zm8-4a1,1,0,0,0-1,1v5a1,1,0,0,1-1,1H14a1,1,0,0,0,0,2h5a3,3,0,0,0,3-3V14A1,1,0,0,0,21,13Z"
+          />
+          <path
+            fill="currentColor"
+            d="M22,4V9a2,2,0,0,1-2,2H15a2,2,0,0,1-2-2V4a2,2,0,0,1,2-2h5A2,2,0,0,1,22,4ZM9,13H4a2,2,0,0,0-2,2v5a2,2,0,0,0,2,2H9a2,2,0,0,0,2-2V15A2,2,0,0,0,9,13ZM9,2H4A2,2,0,0,0,2,4V9a2,2,0,0,0,2,2H9a2,2,0,0,0,2-2V4A2,2,0,0,0,9,2Z"
+          />
+        </svg>
+        <h1 class="title">QR Share</h1>
+        <p class="subtitle" id="subtitle">Loading…</p>
+      </header>
+      <div class="qr" id="qr" aria-label="QR code"></div>
+      <div class="fallback" id="fallback" hidden>
+        <p>This page can't be shared as a QR code.</p>
+      </div>
+    </main>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
